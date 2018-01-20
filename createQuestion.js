@@ -8,8 +8,6 @@ fs.readFile(file, 'utf-8', function(err, data) {
 
 	var arrayOfObjects = JSON.parse(data);
 
-   //console.log(arrayOfObjects.questiontype);
-
 
     if (questiontype==="cloze") {
 
@@ -47,6 +45,3 @@ fs.readFile(file, 'utf-8', function(err, data) {
 
  };
 
-
-
-//appendJsonToFile("question.json", "basic", "Who am I?", "Sean");

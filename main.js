@@ -1,6 +1,6 @@
 var inquirer = require('inquirer');
 
-var flashCards = require('./flashCards.js');
+var cards = require('./cards.js');
 
 var questions = require('./question.json');
 
@@ -26,29 +26,29 @@ function askQuestion() {
         console.log('\n');
 
         if (answers.userGuess.toLowerCase() === questionsArray[currentQuestion].answer.toLowerCase()) {
-            console.log('Correct!');
+            console.log('Correct');
             answerRight++;
         } else {
-            console.log('Incorrect!');
+            console.log('Wrong');
             answerWrong++;
         }
 
         console.log(questionsArray[currentQuestion].answer);
-        console.log('-------------------------------------\n');
+        console.log('--------------------------------------------------------------------------------\n');
 
         if (currentQuestion < questionsArray.length - 1) {
             currentQuestion++;
             askQuestion();
         } else {
-            console.log('Game Over!');
+            console.log('End Game');
             console.log('Correct Answers: ' + answerRight);
             console.log('Incorrect Answers: ' + answerWrong);
 
-            console.log('-------------------------------------\n');
+        console.log('--------------------------------------------------------------------------------\n');
 
             inquirer.prompt([{
                 type: 'confirm',
-                message: 'Would you like to play again?',
+                message: 'Play Again?',
                 name: 'playAgain'
             }]).then(function(answers) {
                 if (answers.playAgain) {
@@ -58,7 +58,7 @@ function askQuestion() {
 
                     askQuestion();
                 } else {
-                    console.log('Thanks for playing! Goodbye!');
+                    console.log('Good Riddance');
                 }
             })
         }
@@ -80,7 +80,7 @@ if (args[2] === "add") {
 
 
         for (var i = 0; i < questions.basic.length; i++) {
-            var q = new flashCards.BasicCard(questions.basic[i].question, questions.basic[i].answer);
+            var q = new cards.BasicCard(questions.basic[i].question, questions.basic[i].answer);
             questionsArray.push(q);
         }
 
@@ -91,7 +91,7 @@ if (args[2] === "add") {
 
 
         for (var i = 0; i < questions.cloze.length; i++) {
-            var q = new flashCards.ClozeCard(questions.cloze[i].question, questions.cloze[i].answer);
+            var q = new cards.ClozeCard(questions.cloze[i].question, questions.cloze[i].answer);
             questionsArray.push(q);
         }
 
