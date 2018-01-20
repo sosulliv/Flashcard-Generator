@@ -1,0 +1,46 @@
+{
+    "cloze": [
+    {
+        "question": "Randall Cunningham was Quarterback for the Vikings team that went 15-1 during the 1998 season.",
+        "answer": "Randall Cunningham"
+    },
+    {
+        "question": "Freddie Mitchell caught the famous 4 and 26 play against the Packers.",
+        "answer": "Freddie Mitchell"
+    },
+    {
+        "question": "Donovan McNabb was the Quarterback of the Eagles during their last trip to the Super Bowl.",
+        "answer": "Donovan McNabb"
+    },
+    {
+        "question": "The Philadelphia Eagles beat Vince Lombardi's Packers during the 1960 championship.",
+        "answer": "Philadelphia Eagles"
+    },
+
+    {
+        "question": "The Eagles beat the Dallas Cowboys to advance to their first Super Bowl",
+        "answer": "Dallas Cowboys"
+    }
+   ],
+    "basic": [
+    {
+        "question": "The martial art of kung fu originated in which country?",
+        "answer": "China"
+    },
+    {
+        "question": "In the United States, where can alligators and crocodiles be found together in the wild?",
+        "answer": "South Florida"
+    },
+    {
+        "question": "What famous female singer died of alcohol poisoning in 2011 at the age of 27?",
+        "answer": "Amy Winehouse"
+    },
+    {
+        "question": "According to the popular Christmas song, Frosty the Snowman, what are the snowman's eyes made out of?",
+        "answer": "Coal"
+    },
+    {
+        "question": "Who was the author of 'The Amityville Horror' published in 1977?",
+        "answer": "Jay Anson"
+    }]
+}
